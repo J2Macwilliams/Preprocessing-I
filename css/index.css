@@ -141,15 +141,28 @@ body {
   height: 4vh;
   margin: 2%;
   padding: 2%;
-  border: 2px solid orangered;
 }
 .navTop nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background: #b62d1b;
+}
+@media (max-width: 500px) {
+  .navTop nav {
+    flex-direction: column;
+  }
 }
 .navTop nav a {
-  width: 100%;
+  width: 20%;
+  padding: 3%;
   text-decoration: none;
   text-align: center;
+  color: whitesmoke;
+}
+@media (max-width: 500px) {
+  .navTop nav a {
+    width: 100%;
+    border: 1px solid orange;
+  }
 }

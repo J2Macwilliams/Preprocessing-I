@@ -48,6 +48,14 @@ table {
 	border-spacing: 0;
 }
 
+
+html {
+	font-size: 62.5%;
+}
+@mobileSize {
+	font-size: 4rem;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
@@ -56,6 +64,7 @@ html, body {
     height: 100%;
 }
 
+
 .container {
 	width:100%;
 }
@@ -63,17 +72,36 @@ html, body {
 	height: 4vh;
 	margin: 2%;
 	padding: 2%;
-	border: 2px solid orangered;
+	
 
 	nav {
+
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
+		background: rgb(182, 45, 27);
+
+		@media(max-width: 500px){
+			flex-direction: column;
+		}//close the media query
+
 
 		a {
-			width: 100%;
+			width: 20%;
+			padding: 3%;
 			text-decoration: none;
 			text-align: center;
+			color: whitesmoke;
+		
+			@media(max-width: 500px){
+				width: 100%;
+				border: 1px solid orange;
+				font-size: @mobileSize;
+			}//close the media query
+		
+		
 		}//closes the a tag
+
+		
 	}//closes the nav
 }//closes the navTop
