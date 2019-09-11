@@ -59,43 +59,139 @@ html, body {
     height: 100%;
 }
 
-@mobileSize: 5rem;
+@mobileSize: 6rem;
+@bottomSize: 3rem;
 
+.border(){
+	border: 1px solid orange;
+}
 .container {
 	width:100%;
-}
-.navTop {
-	height: 4vh;
-	margin: 2%;
-	padding: 2%;
+
+	.navTop {
+		height: 4vh;
+		margin: 2%;
+		padding: 2%;
+		
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background: rgb(182, 45, 27);
 	
-	nav {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		background: rgb(182, 45, 27);
-
-		@media(max-width: 500px){
-			flex-direction: column;
-		}//close the media query
-
-		a {
-			font-size:  1.5rem;
-			width: 20%;
-			padding: 3%;
-			text-decoration: none;
-			text-align: center;
-			color: whitesmoke;
-		
 			@media(max-width: 500px){
-				width: 100%;
-				border: 1px solid orange;
-				font-size: @mobileSize;
+				flex-direction: column;
 			}//close the media query
+	
+			a {
+				font-size:  2rem;
+				width: 20%;
+				padding: 3%;
+				text-decoration: none;
+				text-align: center;
+				color: whitesmoke;
+	
+				:hover {
+					background: blue;
+					color: white;
+				}
+			
+				@media(max-width: 500px){
+					width: 100%;
+					.border();
+					font-size: @mobileSize;
+				}//close the media query
+			
+			
+			}//closes the a tag
+	
+			
+		}//closes the nav
+
+	}//closes the navTop
+	
+	
+	.topSection {
+		width: 100%;
+	
+		.left {
+			width: 45%;
+	
+			.topBox {
+				width: 100%;
+	
+				#about {
+					width: 90%;
+				}//closes the About id
+			}//closes the topBox 
+	
+			.bottomBox {
+				width: 100%;
+	
+	
+			}
+	
+		}//closes the left section
+	
+		.right {
+			width: 45%;
+	
+	
+	
+	
+	
+		}//closes the right section
+	
+	
+	
+	
+	}//closes the topSection
+	
+	#contact {
+		width: 100%
+	}
+
+	footer {
+		width: 100%
 		
-		
-		}//closes the a tag
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background: rgb(182, 45, 27);
+	
+			@media(max-width: 500px){
+				flex-direction: column;
+			}//close the media query
+	
+			a {
+				font-size:  1.5rem;
+				width: 20%;
+				padding: 1%;
+				text-decoration: none;
+				text-align: center;
+				color: whitesmoke;
+	
+				:hover {
+					background: blue;
+					color: white;
+				}
+			
+				@media(max-width: 500px){
+					width: 100%;
+					.border();
+					font-size: @bottomSize;
+				}//close the media query
+			
+			
+			}//closes the a tag
+	
+			
+		}//closes the nav
+
 
 		
-	}//closes the nav
-}//closes the navTop
+	}
+}
+
+

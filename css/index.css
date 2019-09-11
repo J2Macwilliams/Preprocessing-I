@@ -140,34 +140,62 @@ body {
 .container {
   width: 100%;
 }
-.navTop {
+.container .navTop {
   height: 4vh;
   margin: 2%;
   padding: 2%;
 }
-.navTop nav {
+.container .navTop nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #b62d1b;
 }
 @media (max-width: 500px) {
-  .navTop nav {
+  .container .navTop nav {
     flex-direction: column;
   }
 }
-.navTop nav a {
-  font-size: 1.5rem;
+.container .navTop nav a {
+  font-size: 2rem;
   width: 20%;
   padding: 3%;
   text-decoration: none;
   text-align: center;
   color: whitesmoke;
 }
+.container .navTop nav a :hover {
+  background: blue;
+  color: white;
+}
 @media (max-width: 500px) {
-  .navTop nav a {
+  .container .navTop nav a {
     width: 100%;
     border: 1px solid orange;
-    font-size: 5rem;
+    font-size: 6rem;
   }
+}
+.container .topSection {
+  width: 100%;
+}
+.container .topSection .left {
+  width: 45%;
+}
+.container .topSection .left .topBox {
+  width: 100%;
+}
+.container .topSection .left .topBox #about {
+  width: 90%;
+}
+.container .topSection .left .bottomBox {
+  width: 100%;
+}
+.container .topSection .right {
+  width: 45%;
+}
+.container #contact {
+  width: 100%;
+}
+.container footer {
+  width: 100%;
 }
