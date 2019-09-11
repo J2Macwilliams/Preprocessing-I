@@ -130,6 +130,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -154,6 +157,7 @@ body {
   }
 }
 .navTop nav a {
+  font-size: 1.5rem;
   width: 20%;
   padding: 3%;
   text-decoration: none;
@@ -164,5 +168,6 @@ body {
   .navTop nav a {
     width: 100%;
     border: 1px solid orange;
+    font-size: 5rem;
   }
 }

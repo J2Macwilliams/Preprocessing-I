@@ -48,22 +48,18 @@ table {
 	border-spacing: 0;
 }
 
-
-html {
-	font-size: 62.5%;
-}
-@mobileSize {
-	font-size: 4rem;
-}
-
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
 }
 html, body {
     height: 100%;
 }
 
+@mobileSize: 5rem;
 
 .container {
 	width:100%;
@@ -73,9 +69,7 @@ html, body {
 	margin: 2%;
 	padding: 2%;
 	
-
 	nav {
-
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -85,8 +79,8 @@ html, body {
 			flex-direction: column;
 		}//close the media query
 
-
 		a {
+			font-size:  1.5rem;
 			width: 20%;
 			padding: 3%;
 			text-decoration: none;
