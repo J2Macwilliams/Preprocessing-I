@@ -176,6 +176,11 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .container .bigBox .navTop nav {
+    flex-direction: column;
+  }
+}
 .container .bigBox .navTop nav a {
   font-size: 2rem;
   width: 20%;
@@ -248,6 +253,11 @@ body {
     height: 35%;
   }
 }
+@media (max-width: 500px) {
+  .container .topSection .left .bottomBox {
+    height: 35%;
+  }
+}
 @media (max-width: 768px) {
   .container .topSection .left {
     width: 100%;
@@ -284,6 +294,12 @@ body {
     padding-top: 2%;
   }
 }
+@media (max-width: 500px) {
+  .container .topSection .right {
+    width: 100%;
+    padding-top: 2%;
+  }
+}
 .container .topSection .right .skills {
   display: flex;
   flex-direction: column;
@@ -307,6 +323,12 @@ body {
     justify-content: center;
   }
 }
+@media (max-width: 500px) {
+  .container .topSection {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .container #contact {
   width: 100%;
   margin: 1%;
@@ -323,6 +345,11 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .container #contact .links {
+    flex-direction: column;
+  }
+}
 .container #contact .links h3 {
   padding: 2%;
 }
@@ -335,6 +362,14 @@ body {
   color: whitesmoke;
 }
 @media (max-width: 768px) {
+  .container #contact .links a {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #18275d;
+    color: whitesmoke;
+  }
+}
+@media (max-width: 500px) {
   .container #contact .links a {
     width: 100%;
     text-align: center;
