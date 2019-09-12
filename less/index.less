@@ -162,7 +162,7 @@ html, body {
 
 	
 		.left {
-			width: 45%;
+			width: 50%;
 			margin: 1%;
 			
 			
@@ -174,8 +174,10 @@ html, body {
 				padding: 2%;
 				display: flex;
 				justify-content: center;
-				text-align: center;
-
+				// text-align: center;
+					h1 {
+					text-align: center;
+					}
 				#about {
 					width: 90%;
 
@@ -192,10 +194,20 @@ html, body {
 
 			}//closes the topBox 
 	
+
 			.bottomBox {
 				width: 100%;
+				background: #18275d;
+				color: whitesmoke;
+				margin-top:1%;
+				padding:2%;
+				
+
 	
-	
+				@media(max-width: 500px){
+					
+				}//close the media query
+
 			}//closes the bottomBox
 
 			@media(max-width: 500px){
@@ -206,7 +218,8 @@ html, body {
 		}//closes the left section
 	
 		.right {
-			width: 45%;
+			width: 50%;
+			margin: 1%;
 	
 	
 	
@@ -224,7 +237,27 @@ html, body {
 	
 	#contact {
 		width: 100%;
-	}
+		height: 10vh;
+		background:#9f9fa1;
+		text-align: center;
+		margin:1%;
+		padding: 2%;
+		
+		.links {
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-end;
+		}
+		
+		h3 {
+			padding:1%;
+		}
+		a {
+			font-size: 2.5rem;
+			text-decoration: none;
+			color: whitesmoke;
+		}//closes the anchor
+	}//closes the contact id
 
 	footer {
 		width: 100%;
