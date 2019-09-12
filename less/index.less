@@ -29,6 +29,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	border: 1px solid gray;
+  }
 body {
 	line-height: 1;
 }
@@ -49,11 +56,402 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+
+// * {
+// 	box-sizing: border-box;
+// 	margin: 0;
+// 	padding: 0;
+// 	max-width: 100%;
+// 	border: 1px solid gray;
+//   }
+
+
+
+html {
+	font-size: 62.5%;
+}
+
+h1 , h2 , h4 {
+	font-family: 'Montserrat', sans-serif;
+}
+h3, body {
+	font-family: 'Crimson Pro', serif;
+}
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2.5rem;
+}
+h4 {
+	font-size: 2.5rem;
+}
+body {
+	font-size: 1.8rem;
 }
 
 html, body {
     height: 100%;
 }
+
+@mobileSize: 3rem;
+@bottomSize: 1.5rem;
+
+.lineHeight(){
+	line-height: 1.5;
+} 
+
+.borderTop(){
+	border: 1px solid #f33b47;
+}
+.borderBottom(){
+	border: 1px solid #18275d;
+}
+.borderColor(){
+	background: #18275d;
+}
+.color(){
+	color: whitesmoke;
+}
+
+.container {
+	width:100%;
+	display: flex;
+	flex-direction: column;
+
+	.bigBox {
+		width: 100%;
+		border: 1px solid #f33b47;
+
+		.navTop {
+			width: 100%;
+			
+			
+			nav {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background: #7a9fe6;
+		
+				@media(max-width: 768px){
+					flex-direction: column;
+				}//close the media query
+
+				@media(max-width: 500px){
+					flex-direction: column;
+				}//close the media query
+		
+				a {
+					font-size:  2rem;
+					width: 20%;
+					padding: 1.8%;
+					text-decoration: none;
+					text-align: center;
+					color: #f33b47;
+		
+					
+				
+					@media(max-width: 768px){
+						width: 100%;
+						.borderTop();
+						.color();
+						font-size: @mobileSize;
+					}//close the media query
+				
+				
+				}//closes the a tag
+		
+				a:hover {
+					color:whitesmoke;
+				}
+				
+			}//closes the nav
+
+		}//closes the navTop
+
+	}//closes the bigBox
+	
+	
+	.topSection {
+		width: 100%;
+		display: flex;
+
+	
+		.left {
+			width: 50%;
+			margin: 1%;
+			
+			
+	
+			.topBox {
+				width: 100%;
+				background: #556ca6;
+				.color();
+				padding: 2%;
+				display: flex;
+				justify-content: center;
+				// text-align: center;
+					h1 {
+					text-align: center;
+					}
+				#about {
+					width: 90%;
+					font-size:2rem;
+					.lineHeight();
+
+					img {
+						width: 100%;
+						border-radius: 5%;
+						padding: 2%;
+						border: 1px solid whitesmoke;
+					}
+
+
+				}//closes the About id
+
+
+			}//closes the topBox 
+
+			.bottomBox {
+				width: 100%;
+				height: 40%;
+				background: #18275d;
+				color: whitesmoke;
+				margin-top:1%;
+				margin-bottom:1%;
+				padding:2%;
+				
+				.school {
+					display:flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+
+					.study {
+						padding: 3%;
+						.lineHeight();
+					}//closes the study
+
+				}//closes the school class
+	
+				@media(max-width: 800px){
+					height:35%;
+				}//close the media query
+
+				@media(max-width: 500px){
+					height:35%;
+				}//close the media query
+
+			}//closes the bottomBox
+
+			@media(max-width: 768px){
+					width: 100%;
+			}//close the media query
+
+
+		}//closes the left section
+	
+		.right {
+			width: 50%;
+			margin: 1%;
+		
+			h2 {
+				padding: 2%;
+			}
+			.work {
+				display: flex;
+				
+
+				.job {
+					width: 50%;
+					padding: 2%;
+					.lineHeight();
+				}//closes the job class
+
+			}//closes the work section
+	
+			.professional {
+				display:flex;
+				flex-direction: column;
+				justify-content: space-around;
+
+				.proItem {
+					width: 100%;
+					padding: 2%;
+					.lineHeight();
+				}//closes the proItem
+
+			}//closes the professional class
+	
+			@media(max-width: 768px){
+				width: 100%;
+				padding-top: 2%;
+			}//close the media query
+
+			@media(max-width: 500px){
+				width: 100%;
+				padding-top: 2%;
+			}//close the media query
+	
+			.skills {
+				display:flex;
+				flex-direction: column;
+				background: #7a9fe6;
+				margin: 1%;
+
+				h2 {
+					color:whitesmoke;
+					padding: 2%;
+				}
+
+				.skillItem {
+					width: 100%;
+					padding: 2%;
+					text-align: center;
+					color: black;
+					.lineHeight();
+				}//closes the skillItem class
+
+			}//closes the skills class
+
+			.hobbies {
+					display:flex;
+					flex-direction: column;
+					background: black;
+					margin: 1%;
+
+					h2 {
+						color:whitesmoke;
+						padding: 2%;
+					}
+
+					.fun {
+						width: 100%;
+						padding: 2%;
+						text-align: center;
+						color: whitesmoke;
+						.lineHeight();
+					}//closes the skillItem class
+
+			}//closes the hobbies class
+
+		}//closes the right section
+	
+		@media(max-width: 768px){
+			flex-direction: column;
+			justify-content: center;
+		}//close the media query
+
+		@media(max-width: 500px){
+			flex-direction: column;
+			justify-content: center;
+		}//close the media query
+	
+	
+	}//closes the topSection
+	
+	
+	#contact {
+		width: 100%;
+		margin:1%;
+		// background:#9f9fa1;
+		.borderBottom();
+		
+
+		.links {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background: #9f9fa1;
+
+		
+			@media(max-width: 768px){
+				flex-direction: column;
+				
+			}//close the media query
+
+			@media(max-width: 500px){
+				flex-direction: column;
+				
+			}//close the media query
+
+
+			h3 {
+				padding:2%;
+			}
+			a {
+
+				font-size:  2rem;
+				width: 20%;
+				padding: 2%;
+				text-decoration: none;
+				text-align: center;
+				color: whitesmoke;
+
+
+				@media(max-width: 768px){
+					width: 100%;
+					text-align: center;
+					.borderBottom();
+					.color();
+					
+				}//close the media query
+
+				@media(max-width: 500px){
+					width: 100%;
+					text-align: center;
+					.borderBottom();
+					.color();
+					
+				}//close the media query
+
+			}//closes the anchor
+
+		}//closes the links class
+
+	}//closes the contact id
+
+	footer {
+		width: 100%;
+		margin-bottom: 1%;
+		
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background: #f33b47;
+	
+			@media(max-width: 500px){
+				.borderColor();
+			}//close the media query
+	
+			a {
+				font-size:  1.5rem;
+				width: 20%;
+				padding: 2%;
+				text-decoration: none;
+				text-align: center;
+				color: whitesmoke;
+	
+				@media(max-width: 500px){
+					width: 15%;
+					font-size: @bottomSize;
+				}//close the media query
+			
+			}//closes the a tag
+
+			a:hover {
+				color:#7a9fe6;
+			}
+			
+		}//closes the nav
+
+	}//closes the footer
+
+}//closes the container
+
 
