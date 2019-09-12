@@ -78,7 +78,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 }
 body {
 	font-size: 1.8rem;
@@ -97,6 +97,9 @@ html, body {
 
 .borderTop(){
 	border: 1px solid #f33b47;
+}
+.borderBottom(){
+	border: 1px solid #18275d;
 }
 .borderColor(){
 	background: #18275d;
@@ -126,7 +129,6 @@ html, body {
 		
 				@media(max-width: 500px){
 					flex-direction: column;
-					.borderColor();
 				}//close the media query
 		
 				a {
@@ -197,11 +199,10 @@ html, body {
 
 
 			}//closes the topBox 
-	
 
 			.bottomBox {
 				width: 100%;
-				height: 35vh;
+				height: 40%;
 				background: #18275d;
 				color: whitesmoke;
 				margin-top:1%;
@@ -273,28 +274,86 @@ html, body {
 	
 	}//closes the topSection
 	
+	
 	#contact {
 		width: 100%;
-		height: 10vh;
-		background:#9f9fa1;
-		text-align: center;
 		margin:1%;
-		padding: 2%;
+		// background:#9f9fa1;
+		.borderBottom();
 		
+
 		.links {
 			display: flex;
-			justify-content: space-around;
-			align-items: flex-end;
-		}
+			justify-content: space-between;
+			align-items: center;
+			background: #9f9fa1;
+
+			// width: 100%;
+			// // height:20%;
+			// // padding: 2%;
+			// background:#9f9fa1;
+			// text-align: center;
+			// display: flex;
+			// justify-content: space-between;
+			// align-items: center;
 		
-		h3 {
-			padding:1%;
-		}
-		a {
-			font-size: 2.5rem;
-			text-decoration: none;
-			color: whitesmoke;
-		}//closes the anchor
+			@media(max-width: 768px){
+				flex-direction: column;
+				// height:30%;
+			}//close the media query
+
+			// @media(max-width: 500px){
+			// 	flex-direction: column;
+			// 	height:30%;
+			// }//close the media query
+
+			h3 {
+				padding:2%;
+			}
+			a {
+
+				font-size:  2rem;
+				width: 20%;
+				padding: 2%;
+				text-decoration: none;
+				text-align: center;
+				color: whitesmoke;
+
+				// font-size: 2.5rem;
+				// width: 30%;
+				// padding: 2%;
+				// text-decoration: none;
+				// text-align: center;
+				// width: 30%;
+				// font-size: 2.5rem;
+				// text-decoration: none;
+				// color: whitesmoke;
+
+				@media(max-width: 768px){
+					width: 100%;
+					text-align: center;
+					.borderBottom();
+					.color();
+					// font-size: @mobileSize;
+
+					// width: 100%;
+					// text-align: center;
+					// .borderBottom();
+				}//close the media query
+
+				// @media(max-width: 500px){
+				// 	width: 100%;
+				// 	.borderBottom();
+				// }//close the media query
+
+			}//closes the anchor
+
+			
+
+		}//closes the links class
+
+		
+
 	}//closes the contact id
 
 	footer {

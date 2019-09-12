@@ -144,7 +144,7 @@ h2 {
   font-size: 3rem;
 }
 h3 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 body {
   font-size: 1.8rem;
@@ -174,7 +174,6 @@ body {
 @media (max-width: 500px) {
   .container .bigBox .navTop nav {
     flex-direction: column;
-    background: #18275d;
   }
 }
 .container .bigBox .navTop nav a {
@@ -226,7 +225,7 @@ body {
 }
 .container .topSection .left .bottomBox {
   width: 100%;
-  height: 35vh;
+  height: 40%;
   background: #18275d;
   color: whitesmoke;
   margin-top: 1%;
@@ -281,24 +280,38 @@ body {
 }
 .container #contact {
   width: 100%;
-  height: 10vh;
-  background: #9f9fa1;
-  text-align: center;
   margin: 1%;
-  padding: 2%;
+  border: 1px solid #18275d;
 }
 .container #contact .links {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  background: #9f9fa1;
 }
-.container #contact h3 {
-  padding: 1%;
+@media (max-width: 768px) {
+  .container #contact .links {
+    flex-direction: column;
+  }
 }
-.container #contact a {
-  font-size: 2.5rem;
+.container #contact .links h3 {
+  padding: 2%;
+}
+.container #contact .links a {
+  font-size: 2rem;
+  width: 20%;
+  padding: 2%;
   text-decoration: none;
+  text-align: center;
   color: whitesmoke;
+}
+@media (max-width: 768px) {
+  .container #contact .links a {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #18275d;
+    color: whitesmoke;
+  }
 }
 .container footer {
   width: 100%;
