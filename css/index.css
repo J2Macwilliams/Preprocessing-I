@@ -144,10 +144,10 @@ h2 {
   font-size: 3rem;
 }
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 html,
 body {
@@ -174,6 +174,7 @@ body {
 @media (max-width: 500px) {
   .container .bigBox .navTop nav {
     flex-direction: column;
+    background: #18275d;
   }
 }
 .container .bigBox .navTop nav a {
@@ -226,17 +227,24 @@ body {
 }
 @media (max-width: 500px) {
   .container .topSection .left {
-    flex-direction: column;
+    width: 100%;
   }
 }
 .container .topSection .right {
   width: 45%;
+}
+@media (max-width: 500px) {
+  .container .topSection {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .container #contact {
   width: 100%;
 }
 .container footer {
   width: 100%;
+  margin-bottom: 1%;
 }
 .container footer nav {
   display: flex;
@@ -246,7 +254,7 @@ body {
 }
 @media (max-width: 500px) {
   .container footer nav {
-    flex-direction: column;
+    background: #18275d;
   }
 }
 .container footer nav a {
@@ -259,9 +267,8 @@ body {
 }
 @media (max-width: 500px) {
   .container footer nav a {
-    width: 100%;
-    border: 1px solid #f33b47;
-    font-size: 3rem;
+    width: 15%;
+    font-size: 1.5rem;
   }
 }
 .container footer nav a:hover {
