@@ -239,9 +239,13 @@ html, body {
 		.right {
 			width: 50%;
 			margin: 1%;
-
+		
+			h2 {
+				padding: 2%;
+			}
 			.work {
 				display: flex;
+				
 
 				.job {
 					width: 50%;
@@ -269,6 +273,27 @@ html, body {
 				padding-top: 2%;
 			}//close the media query
 	
+			.skills {
+					display:flex;
+					flex-direction: column;
+					background: black;
+					margin: 1%;
+
+					h2 {
+						color:whitesmoke;
+						padding: 2%;
+					}
+
+					.skillItem {
+						width: 100%;
+						padding: 2%;
+						text-align: center;
+						color: whitesmoke;
+						.lineHeight();
+					}//closes the skillItem class
+
+			}//closes the skills class
+
 		}//closes the right section
 	
 		@media(max-width: 768px){

@@ -257,6 +257,9 @@ body {
   width: 50%;
   margin: 1%;
 }
+.container .topSection .right h2 {
+  padding: 2%;
+}
 .container .topSection .right .work {
   display: flex;
 }
@@ -280,6 +283,23 @@ body {
     width: 100%;
     padding-top: 2%;
   }
+}
+.container .topSection .right .skills {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  margin: 1%;
+}
+.container .topSection .right .skills h2 {
+  color: whitesmoke;
+  padding: 2%;
+}
+.container .topSection .right .skills .skillItem {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  color: whitesmoke;
+  line-height: 1.5;
 }
 @media (max-width: 768px) {
   .container .topSection {
