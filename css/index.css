@@ -216,6 +216,8 @@ body {
 }
 .container .topSection .left .topBox #about {
   width: 90%;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 .container .topSection .left .topBox #about img {
   width: 100%;
