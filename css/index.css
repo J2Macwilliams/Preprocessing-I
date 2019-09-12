@@ -315,7 +315,7 @@ body {
 .container .topSection .right .skills {
   display: flex;
   flex-direction: column;
-  background: black;
+  background: #7a9fe6;
   margin: 1%;
 }
 .container .topSection .right .skills h2 {
@@ -323,6 +323,23 @@ body {
   padding: 2%;
 }
 .container .topSection .right .skills .skillItem {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  color: black;
+  line-height: 1.5;
+}
+.container .topSection .right .hobbies {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  margin: 1%;
+}
+.container .topSection .right .hobbies h2 {
+  color: whitesmoke;
+  padding: 2%;
+}
+.container .topSection .right .hobbies .fun {
   width: 100%;
   padding: 2%;
   text-align: center;
