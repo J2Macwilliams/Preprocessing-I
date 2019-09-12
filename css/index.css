@@ -104,6 +104,13 @@ nav,
 section {
   display: block;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  border: 1px solid gray;
+}
 body {
   line-height: 1;
 }
@@ -127,11 +134,20 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-}
 html {
   font-size: 62.5%;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+body {
+  font-size: 2rem;
 }
 html,
 body {
@@ -139,56 +155,79 @@ body {
 }
 .container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.container .navTop {
-  height: 4vh;
-  margin: 2%;
-  padding: 2%;
+.container .bigBox {
+  width: 100%;
+  border: 1px solid #f33b47;
 }
-.container .navTop nav {
+.container .bigBox .navTop {
+  width: 100%;
+}
+.container .bigBox .navTop nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #b62d1b;
+  background: #7a9fe6;
 }
 @media (max-width: 500px) {
-  .container .navTop nav {
+  .container .bigBox .navTop nav {
     flex-direction: column;
   }
 }
-.container .navTop nav a {
+.container .bigBox .navTop nav a {
   font-size: 2rem;
   width: 20%;
   padding: 3%;
   text-decoration: none;
   text-align: center;
-  color: whitesmoke;
-}
-.container .navTop nav a :hover {
-  background: blue;
-  color: white;
+  color: #f33b47;
 }
 @media (max-width: 500px) {
-  .container .navTop nav a {
+  .container .bigBox .navTop nav a {
     width: 100%;
-    border: 1px solid orange;
-    font-size: 6rem;
+    border: 1px solid #f33b47;
+    color: whitesmoke;
+    font-size: 4rem;
   }
+}
+.container .bigBox .navTop nav a:hover {
+  color: whitesmoke;
 }
 .container .topSection {
   width: 100%;
+  display: flex;
 }
 .container .topSection .left {
   width: 45%;
+  margin: 1%;
 }
 .container .topSection .left .topBox {
   width: 100%;
+  background: #556ca6;
+  color: whitesmoke;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .container .topSection .left .topBox #about {
   width: 90%;
 }
+.container .topSection .left .topBox #about img {
+  width: 100%;
+  border-radius: 5%;
+  padding: 2%;
+  border: 1px solid whitesmoke;
+}
 .container .topSection .left .bottomBox {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .container .topSection .left {
+    flex-direction: column;
+  }
 }
 .container .topSection .right {
   width: 45%;
@@ -198,4 +237,33 @@ body {
 }
 .container footer {
   width: 100%;
+}
+.container footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f33b47;
+}
+@media (max-width: 500px) {
+  .container footer nav {
+    flex-direction: column;
+  }
+}
+.container footer nav a {
+  font-size: 1.5rem;
+  width: 20%;
+  padding: 2%;
+  text-decoration: none;
+  text-align: center;
+  color: whitesmoke;
+}
+@media (max-width: 500px) {
+  .container footer nav a {
+    width: 100%;
+    border: 1px solid #f33b47;
+    font-size: 3rem;
+  }
+}
+.container footer nav a:hover {
+  color: #7a9fe6;
 }
