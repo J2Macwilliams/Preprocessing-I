@@ -226,10 +226,20 @@ body {
 }
 .container .topSection .left .bottomBox {
   width: 100%;
+  height: 35vh;
   background: #18275d;
   color: whitesmoke;
   margin-top: 1%;
   padding: 2%;
+}
+.container .topSection .left .bottomBox .school {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container .topSection .left .bottomBox .school .study {
+  padding: 3%;
+  line-height: 1.5;
 }
 @media (max-width: 500px) {
   .container .topSection .left {
@@ -239,6 +249,29 @@ body {
 .container .topSection .right {
   width: 50%;
   margin: 1%;
+}
+.container .topSection .right .work {
+  display: flex;
+}
+.container .topSection .right .work .job {
+  width: 50%;
+  padding: 2%;
+  line-height: 1.5;
+}
+.container .topSection .right .professional {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .topSection .right .professional .proItem {
+  width: 100%;
+  padding: 2%;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .container .topSection .right {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .container .topSection {

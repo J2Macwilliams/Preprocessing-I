@@ -91,6 +91,10 @@ html, body {
 @mobileSize: 4rem;
 @bottomSize: 1.5rem;
 
+.lineHeight(){
+	line-height: 1.5;
+} 
+
 .borderTop(){
 	border: 1px solid #f33b47;
 }
@@ -197,12 +201,22 @@ html, body {
 
 			.bottomBox {
 				width: 100%;
+				height: 35vh;
 				background: #18275d;
 				color: whitesmoke;
 				margin-top:1%;
 				padding:2%;
 				
+				.school {
+					display:flex;
+					flex-direction: column;
+					justify-content: space-evenly;
 
+					.study {
+						padding: 3%;
+						.lineHeight();
+					}
+				}
 	
 				@media(max-width: 500px){
 					
@@ -221,9 +235,33 @@ html, body {
 			width: 50%;
 			margin: 1%;
 	
+			.work {
+				display: flex;
+
+				.job {
+					width: 50%;
+					padding: 2%;
+					.lineHeight();
+				}//closes the job class
+
+			}//closes the work section
 	
+			.professional {
+				display:flex;
+				flex-direction: column;
+				justify-content: space-around;
+
+				.proItem {
+					width: 100%;
+					padding: 2%;
+					.lineHeight();
+				}//closes the proItem
+
+			}//closes the professional class
 	
-	
+			@media(max-width: 500px){
+				width: 100%;
+			}//close the media query
 	
 		}//closes the right section
 	
