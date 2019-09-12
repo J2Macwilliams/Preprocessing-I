@@ -243,6 +243,11 @@ body {
   padding: 3%;
   line-height: 1.5;
 }
+@media (max-width: 800px) {
+  .container .topSection .left .bottomBox {
+    height: 35%;
+  }
+}
 @media (max-width: 768px) {
   .container .topSection .left {
     width: 100%;
